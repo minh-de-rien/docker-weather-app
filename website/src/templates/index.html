@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="EN" xml:lang="en">
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="static/css/styles_web.css">
+</head>
+<body>
+    <div >
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname">Day</h2>
+                <span class="date-day">Date</span>
+                <p class="date-time">Time</p>
+                <select class="location" id="city-select">
+                    <option value="Montreal">Montreal</option>
+                    <option value="London">London</option>
+                    <option value="Paris">Paris</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info-side">
+                <div>
+                    <img id="icon" alt="Weather Icon">
+                    <p class="value weather-desc" id="weather-desc"></p>
+                </div>
+                <div>
+                    <span class="title">Temperature:</span>
+                    <h1 class="value weather-temp" id="temperature"></span>
+                </div>
+                <div>
+                    <span class="title">Humidity:</span>
+                    <p class="value"  id="humidity"></span>
+                </div>
+                <div>
+                    <span class="title">Wind Speed:</span>
+                    <p class="value"  id="wind-speed"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/fetch_weather_data.js"></script>
+</body>
+</html>

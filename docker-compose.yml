@@ -1,0 +1,12 @@
+version: '1.0'
+services:
+  weather-server:
+    image: minhderien/weather-server:1.0
+    ports:
+      - 5000:5000
+    environment:
+      - API_KEY=36b96764a95f3dd9318b355da07e1ae7
+  weather-client:
+    image: minhderien/weather-website:1.0
+    ports:
+      - 8000:8000

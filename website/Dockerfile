@@ -1,0 +1,8 @@
+FROM python:3.9
+WORKDIR /app/weather-website/
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
+WORKDIR /app/weather-website/src
+COPY src/ .
+EXPOSE 8000
+ENTRYPOINT [ "python3", "weather_website.py" ]
